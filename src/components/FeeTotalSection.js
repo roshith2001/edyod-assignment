@@ -20,7 +20,7 @@ const FeeTotalSection = ({ BasicFees, TotalValue }) => {
         >
           <div className="w-full flex justify-between font-semibold items-center">
             <p className="">Limited time offer</p>
-            <p>₹ {Discount}</p>
+            <p>₹ -{Discount}</p>
           </div>
 
           <div className="flex items-center">
