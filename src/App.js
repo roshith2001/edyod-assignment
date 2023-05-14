@@ -1,23 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Home from './components/Home';
+
+const data = [
+  {
+    months: '12',
+    perMonth: '8',
+    total: '99',
+    recommended: false,
+    expired: true,
+  },
+  {
+    months: '12',
+    perMonth: '15',
+    total: '179',
+    recommended: true,
+    expired: false,
+  },
+  {
+    months: '9',
+    perMonth: '25',
+    total: '149',
+    recommended: false,
+    expired: false,
+  },
+  {
+    months: '3',
+    perMonth: '33',
+    total: '99',
+    recommended: false,
+    expired: false,
+  },
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home paymentData={data} />
     </div>
   );
 }
