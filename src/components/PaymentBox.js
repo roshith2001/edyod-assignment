@@ -47,6 +47,7 @@ const PaymentBox = (props) => {
                 expired={item.expired}
                 isChecked={index === selectedSubPriceBox}
                 onClick={() => handleSubPriceBoxClick(index)}
+                onChange={() => handleSubPriceBoxClick(index)}
                 />
             ))}
           </div>

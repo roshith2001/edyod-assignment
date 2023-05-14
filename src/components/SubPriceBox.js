@@ -19,8 +19,7 @@ const SubPriceBox = ({index, month, perMonth, total, recommended, expired, isChe
             className={`w-5 h-5 border mr-2 text-text2
             {expired ? 'cursor-not-allowed':''} hidden`} 
             checked={recommended ? true : isChecked}
-            disabled={expired} onChange={onChange} 
-            defaultChecked
+            disabled={expired} onChange={onChange}
            />
             
                 <label htmlFor={`radioButton-${index}`}
